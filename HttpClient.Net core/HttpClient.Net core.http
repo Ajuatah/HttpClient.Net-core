@@ -1,0 +1,6 @@
+@HttpClient.Net_core_HostAddress = http://localhost:5095
+
+GET {{HttpClient.Net_core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
