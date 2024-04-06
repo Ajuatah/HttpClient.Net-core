@@ -18,8 +18,8 @@ namespace HttpClient.Net_core.Controllers
             _httpClient = httpClient;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("GetPostById")]
+        public async Task<IActionResult> GetPostById(int id)
         {
             var baseUrl = "https://jsonplaceholder.typicode.com/";
             var url = $"{baseUrl}posts/{id}";
@@ -37,8 +37,8 @@ namespace HttpClient.Net_core.Controllers
             }
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post(Post post)
+        [HttpPost("CreatePost")]
+        public async Task<IActionResult> CreatePost(Post post)
         {
             var baseUrl = "https://jsonplaceholder.typicode.com/";
             var url = $"{baseUrl}posts";
@@ -59,8 +59,8 @@ namespace HttpClient.Net_core.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, Post post)
+        [HttpPut("EditExistingPost")]
+        public async Task<IActionResult> EditExistingPost(int id, Post post)
         {
             var baseUrl = "https://jsonplaceholder.typicode.com/";
             var url = $"{baseUrl}posts/{id}";
@@ -81,8 +81,8 @@ namespace HttpClient.Net_core.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("DeletePost")]
+        public async Task<IActionResult> DeletePost(int id)
         {
             var baseUrl = "https://jsonplaceholder.typicode.com/";
             var url = $"{baseUrl}posts/{id}";
@@ -100,8 +100,8 @@ namespace HttpClient.Net_core.Controllers
             }
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("GetAllPost")]
+        public async Task<IActionResult> GetAllPost()
         {
             var baseUrl = "https://jsonplaceholder.typicode.com/";
             var url = $"{baseUrl}posts";
