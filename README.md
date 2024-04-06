@@ -26,18 +26,14 @@ This project demonstrates a simple ASP.NET Core Web API controller acting as a p
 Replace localhost:5000 (or the relevant port) with the base URL where your application is running:
 
 ```http
-GET http://localhost:5000/api/Post/GetPostById/1
+GET http://localhost:5000/api/Post/GetPostById/1 ```
 
-## Important Notes
+ Important Notes
 This project utilizes JSONPlaceholder (https://jsonplaceholder.typicode.com/) as a stand-in for a real data source.
 JSONPlaceholder's API might have limitations or lack full support for certain CRUD operations.
 This code primarily serves as a demonstration of creating a proxy-style Web API controller in ASP.NET Core.
-## Dependencies
-Microsoft.AspNetCore.Http
-Microsoft.AspNetCore.Mvc
-Newtonsoft.Json
-System.Net.Http
-## Future Development
+
+ Future Development
 Replace JSONPlaceholder with a dedicated API designed for the intended data type (e.g., an actual employee management API).
 Implement error handling and logging for a production-ready environment.
 Consider adding authentication/authorization mechanisms if working with sensitive data.
