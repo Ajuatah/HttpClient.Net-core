@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System.Text;
 using System.Net.Http;
 using System.Net;
+using HttpClient.Net_core.Model;
 
 namespace HttpClient.Net_core.Controllers
 {
@@ -250,11 +251,5 @@ namespace HttpClient.Net_core.Controllers
 
     }
 
-    public class Post
-    {
-        public int userId { get; set; }
-        public int id { get; set; }
-        public string title { get; set; }
-        public string body { get; set; }
-    }
+   
 }
